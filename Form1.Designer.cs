@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.PBCodBarra = new System.Windows.Forms.PictureBox();
             this.TxtCodBarra = new System.Windows.Forms.TextBox();
             this.BtnGenerar = new System.Windows.Forms.Button();
@@ -53,7 +54,6 @@
             this.TxtCodBarra.Name = "TxtCodBarra";
             this.TxtCodBarra.Size = new System.Drawing.Size(161, 20);
             this.TxtCodBarra.TabIndex = 1;
-            this.TxtCodBarra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // BtnGenerar
             // 
@@ -114,8 +114,9 @@
             this.Controls.Add(this.BtnGenerar);
             this.Controls.Add(this.TxtCodBarra);
             this.Controls.Add(this.PBCodBarra);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Generador de Codigo";
             ((System.ComponentModel.ISupportInitialize)(this.PBCodBarra)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
